@@ -11,6 +11,8 @@
 3. [Functions and Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
 4. [Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
 ---
+<br>
+
 # Introduction (مقدمه)
 * **Database (دیتابیس):**<br>
 It is a structured collection of data used to store and manage information (مجموعه‌ای ساختارمند از داده‌هاست که برای ذخیره و مدیریت اطلاعات استفاده می‌شود).
@@ -29,6 +31,8 @@ Raw and unprocessed facts such as numbers, text, or dates (واقعیت‌های
 * **Information (اطلاعات):**<br>
 Processed and organized data that provides meaning and context (داده‌های پردازش‌شده و سازمان‌یافته‌ای که معنا و مفهوم ایجاد می‌کنند).
 ---
+<br>
+
 # Data Definition Language (زبان تعریف داده)
 
 ### 1. Data Base (پایگاه داده)
@@ -46,14 +50,20 @@ USE <My Name>
 ### 2. Create Taable (ساخت جدول)
 
 ---
+<br>
+
 # Data Manipulation Language (دستورات مدیریت داده)
 
 
 ---
+<br>
+
 # Functions and Operators (توابع و عملگرها)
 
 
 ---
+<br>
+
 # Joins (روابط بین جدول‌ها)
 
 
