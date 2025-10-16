@@ -1,17 +1,20 @@
 # SQL (زبان پرس‌ و جوی ساختار یافته)
 
-### List (لیست)
-1. [Introduction](#1-Introduction-مقدمه)
-1. [Data Base](#Data-Base)
-2. [Create Table](#Create-Table)
-3. Create Table
-4. Insert Into
-5. Select
-6. From
-7. Where
+## List (لیست)
+1. [Introduction](#Introduction-مقدمه)
+   - Database
+   - SQL
+   - Types of commands
+   - Data
+   - Information
+2. [Data Definition Language (دستورات تعریف داده)](#Data-Definition-Language-زبان-تعریف-داده)
+   - Data Base
+   - Create Taable
+3. [Functions and Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
+4. [Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
 
 ---
-## 1. Introduction (مقدمه)
+## Introduction (مقدمه)
 * **Database (دیتابیس):**<br>
 It is a structured collection of data used to store and manage information (مجموعه‌ای ساختارمند از داده‌هاست که برای ذخیره و مدیریت اطلاعات استفاده می‌شود).
   
@@ -30,7 +33,10 @@ Raw and unprocessed facts such as numbers, text, or dates (واقعیت‌های
 Processed and organized data that provides meaning and context (داده‌های پردازش‌شده و سازمان‌یافته‌ای که معنا و مفهوم ایجاد می‌کنند).
 
 ---
-### 1. Data Base
+## Data Definition Language (زبان تعریف داده)
+
+### 1. Data Base (پایگاه داده)
+
 Create a database with a custom name (ایجاد یک دیتا بیس جدید با نام دلخواه)
 ```ruby
 CREATE DATA BASE <My Name>
@@ -41,8 +47,25 @@ Using a database created with a custom name (استفاده از دیتا بیس
 USE <My Name>
 ```
 
+### 2. Create Taable (ساخت جدول)
+
+
 ---
-### 2. Create Table
+## Data Manipulation Language (دستورات مدیریت داده)
+
+
+
+---
+## Functions and Operators (توابع و عملگرها)
+
+
+
+---
+## Joins (روابط بین جدول‌ها)
+
+
+
+---
 
 
 
