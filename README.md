@@ -1,7 +1,7 @@
 # List (لیست)
 
 ### [SQL Commands (دستورات اس‌کیو‌ال)](#sql-commands-دستورات-اس-کیو-ال)
-1. [ Create Data Base ] (###1.-Create-Data-Base)
+1. [ Create Data Base ] (#1.-Create-Data-Base)
 2. Use Data Base
 3. Create Table
 4. Insert Into
