@@ -1,6 +1,4 @@
-# SQL (زبان پرس‌ و جوی ساختار یافته)
-
-## List (لیست)
+# List (لیست)
 1. [Introduction](#Introduction-مقدمه)
    - Database
    - SQL
@@ -12,9 +10,8 @@
    - Create Taable
 3. [Functions and Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
 4. [Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
-
 ---
-## Introduction (مقدمه)
+# Introduction (مقدمه)
 * **Database (دیتابیس):**<br>
 It is a structured collection of data used to store and manage information (مجموعه‌ای ساختارمند از داده‌هاست که برای ذخیره و مدیریت اطلاعات استفاده می‌شود).
   
@@ -31,9 +28,8 @@ Raw and unprocessed facts such as numbers, text, or dates (واقعیت‌های
 
 * **Information (اطلاعات):**<br>
 Processed and organized data that provides meaning and context (داده‌های پردازش‌شده و سازمان‌یافته‌ای که معنا و مفهوم ایجاد می‌کنند).
-
 ---
-## Data Definition Language (زبان تعریف داده)
+# Data Definition Language (زبان تعریف داده)
 
 ### 1. Data Base (پایگاه داده)
 
@@ -49,28 +45,17 @@ USE <My Name>
 
 ### 2. Create Taable (ساخت جدول)
 
-
 ---
-## Data Manipulation Language (دستورات مدیریت داده)
-
+# Data Manipulation Language (دستورات مدیریت داده)
 
 
 ---
-## Functions and Operators (توابع و عملگرها)
-
-
-
----
-## Joins (روابط بین جدول‌ها)
-
+# Functions and Operators (توابع و عملگرها)
 
 
 ---
+# Joins (روابط بین جدول‌ها)
 
 
-
-
-
-
-
+---
 
