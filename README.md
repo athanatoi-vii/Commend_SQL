@@ -1,7 +1,7 @@
 # List (لیست)
 
 ### [ SQL Commend (دستورات اس کیو ال) ]( #SQL-commend-دستورات-اس-کیو-ال )
-1. Create Data Base
+1. [ Create Data Base ](1.-Create-Data-Base)
 2. Use Data Base
 3. Create Table
 4. Insert Into
@@ -13,7 +13,7 @@
 # SQL Commend (دستورات اس کیو ال)
 
 ### 1. Create Data Base
-Create a database with a custom name (ساخت یک دیتا بیس جدید با نام دلخواه)
+Create a database with a custom name (ایجاد یک دیتا بیس جدید با نام دلخواه)
 ```ruby
 CREATE DATA BASE <My Name>
 ```
