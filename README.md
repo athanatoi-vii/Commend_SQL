@@ -1,4 +1,6 @@
-# List (لیست)
+# SQL Commands (دستورات اس‌ کیو‌ ال)
+
+### List Commands (لیست دستورات)
 1. [Create Data Base](#1-Create-Data-Base)
 2. Use Data Base
 3. Create Table
@@ -8,8 +10,6 @@
 7. Where
 
 ---
-# SQL Commend (دستورات اس کیو ال)
-
 ### 1. Create Data Base
 Create a database with a custom name (ایجاد یک دیتا بیس جدید با نام دلخواه)
 ```ruby
