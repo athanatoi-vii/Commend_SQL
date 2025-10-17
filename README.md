@@ -68,12 +68,50 @@ It is a constraint that makes the value of each row unique and non-empty so that
 ```ruby
 PRIMARY KEY
 ```
+Establishes a relationship between two tables by connecting a column in one table to the primary key of another table (با اتصال یک ستون در یک جدول به کلید اصلی جدول دیگر، بین دو جدول رابطه برقرار می‌کند).
+```ruby
+FOREIGN KEY
+```
+Ensures that all values ​​in a column are unique and there are no duplicate values (اطمینان می‌دهد تمام مقادیر در یک ستون منحصربه‌فرد باشند و مقدار تکراری وجود نداشته باشد).
+```ruby
+UNIQUE
+```
+Ensures that there is a value in the column (اطمینان می‌دهد حتما مقداری در ستون وجود داشته باشد).
+```ruby
+NOT NULL
+```
+Ensures that column values ​​match a specified condition (اطمینان می‌دهد مقادیر ستون با یک شرط مشخص سازگار باشند).
+```ruby
+CHECK (X == Y)
+```
+* ```(X >= Y)```
+* ```(X <= Y)```
+* ```(X != Y)```
+
+If no value is entered, assigns a default value to the column (در صورت وارد نشدن مقدار، یک مقدار پیش‌فرض به ستون اختصاص می‌دهد).
+```ruby
+DEFAULT 'X'
+```
+* ```DEFAULT 0```
+* ```DEFAULT False```
 
 ### 3. Feature
 
 A property for numeric columns that automatically starts the value at number X and increases it by Y units each time (یک ویژگی برای ستون‌ های عددی است که مقدار را به‌ صورت خودکار از عدد اول شروع کرده و هر بار به اندازه عدد دوم افزایش می‌دهد).
 ```ruby
-IDENTITY(1,1)
+IDENTITY(X,Y)
+```
+
+```ruby
+
+```
+
+```ruby
+
+```
+
+```ruby
+
 ```
 
 ### 4. Data Base (پایگاه داده)
