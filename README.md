@@ -112,15 +112,15 @@ DEFAULT <Value>
 
 Assuming that columns X and Y have already been created in the table, to create a column with automatic calculation from the two columns X and Y, a new column can be created as follows (با فرض ساخته شدن ستون دلخواه از قبل در جدول، برای ساخت ستون با محاسبه خودکار از دو ستون دلخواه میتوان به حالت زیر یک ستون جدید ساخت).
 ```ruby
-<Column Name> AS (<Column Name N> * <Column Name M>)
+<Column Name> AS (<Column Name Previous N> * <Column Name Previous M>)
 ```
-```(<Column Name N> + <Column Name M>)```
+```(<Column Name Previous N> + <Column Name Previous M>)```
 
-```(<Column Name N> - <Column Name M>)```
+```(<Column Name Previous N> - <Column Name Previous M>)```
 
-```(<Column Name N> / <Column Name M>)```
+```(<Column Name Previous N> / <Column Name Previous M>)```
 
-```(<Column Name M> % <Column Name M>)```
+```(<Column Name Previous M> % <Column Name Previous M>)```
 
 ### 4. Data Base (پایگاه داده)
 
