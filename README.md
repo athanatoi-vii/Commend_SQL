@@ -70,7 +70,7 @@ Processed and organized data that provides meaning and context (داده‌ها�
 ```IMAGE```          Image data (داده تصویر).
 <br>
 
-### 2. Limitation
+### 2. Limitation (محدودیت)
 
 It is a constraint that makes the value of each row unique and non-empty so that each row in the table has a unique identification (یک محدودیت است که مقدار هر ردیف را منحصر‌به‌فرد و غیرخالی می‌کند تا هر ردیف در جدول شناسایی یکتا داشته باشد).
 ```ruby
@@ -99,7 +99,7 @@ CHECK (X == Y)
 ```(X != Y)```
 <br>
 
-### 3. Feature
+### 3. Feature (ویژگی)
 
 A property for numeric columns that automatically starts the value at number X and increases it by Y units each time (یک ویژگی برای ستون‌ های عددی است که مقدار را به‌ صورت خودکار از عدد اول شروع کرده و هر بار به اندازه عدد دوم افزایش می‌دهد).
 ```ruby
