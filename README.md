@@ -15,6 +15,8 @@
 ### [3. Data Manipulation Language (دستورات مدیریت داده)](#Data-Manipulation-Language-دستورات-مدیریت-داده)
 - Value
 - Select
+- Update
+- Delete
 ### [4. Functions And Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
 ### [5. Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
 
@@ -89,13 +91,13 @@ NOT NULL
 ```
 Ensures that column values ​​match a specified condition (اطمینان می‌دهد مقادیر ستون با یک شرط مشخص سازگار باشند).
 ```ruby
-CHECK (X == Y)
+CHECK (<Column Name> == X)
 ```
-```(X >= Y)```
+```(<Column Name> >= X)```
 
-```(X <= Y)```
+```(<Column Name> <= X)```
 
-```(X != Y)```
+```(<Column Name> != X)```
 
 ### 3. Feature (ویژگی)
 
@@ -105,23 +107,20 @@ IDENTITY(X,Y)
 ```
 If no value is entered, assigns a default value to the column (در صورت وارد نشدن مقدار، یک مقدار پیش‌فرض به ستون اختصاص می‌دهد).
 ```ruby
-DEFAULT 'X'
+DEFAULT <Value>
 ```
-```DEFAULT 0```
-
-```DEFAULT False```
 
 Assuming that columns X and Y have already been created in the table, to create a column with automatic calculation from the two columns X and Y, a new column can be created as follows (با فرض ساخته شدن ستون دلخواه از قبل در جدول، برای ساخت ستون با محاسبه خودکار از دو ستون دلخواه میتوان به حالت زیر یک ستون جدید ساخت).
 ```ruby
-XY AS (X * Y)
+<Column Name> AS (<Column Name Previous> * <Column Name Previous>)
 ```
-```(X + Y)```
+```(<Column Name Previous> + <Column Name Previous>)```
 
-```(X - Y)```
+```(<Column Name Previous> - <Column Name Previous>)```
 
-```(X / Y)```
+```(<Column Name Previous> / <Column Name Previous>)```
 
-```(X % Y)```
+```(<Column Name Previous> % <Column Name Previous>)```
 
 ### 4. Data Base (پایگاه داده)
 
@@ -177,6 +176,20 @@ The value of columns name can be as follows (مقدار نام ستون می‌�
 ```*``` &nbsp;&nbsp; To select all columns (برای انتخواب تمام ستون ها).
 
 ```<Column Name 1>,   ...   , <Column Name 10>``` &nbsp;&nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر).
+
+### 3. Update
+
+Changes the data in the table (داده های موجود در جدول را تغییر می دهد).
+```ruby
+UPDATE <Table Name> SET <Column Name> = X WHERE <Column Name Previous> = Y;
+```
+
+### 4. Delete
+
+Deletes records from the table (رکوردهایی را از جدول حذف می‌کند).
+```ruby
+DELETE FROM <Table Name> WHERE <Column Name> = X;
+```
 
 ---
 <br>
