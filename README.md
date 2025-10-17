@@ -192,10 +192,9 @@ FROM <Table Name N> AS <New Name>,   ...   , <Table Name M> AS <New Name>
 ```
 <br>
 
-❗The general point of the selection section (نکته کلی بخش انتخاب)<br>
-You can also use the following two options instead of all table names (میتوان به جای تمام نام جدول ها از دو حالت زیر هم استفاده کرد):<br>
-```*``` &nbsp; To select all columns (برای انتخاب تمام ستون های جدول).<br>
-```<Column Name N>,   ...   , <Column Name M>``` &nbsp; To select multiple columns in a table (برای انتخاب چند ستون مورد نظر جدول).<br><br>
+❗You can also use the following two options instead of all table names (میتوان به جای تمام نام جدول ها از دو حالت زیر هم استفاده کرد)<br>
+* ``` * ``` &nbsp; To select all columns (برای انتخاب تمام ستون های جدول).<br>
+* ```<Column Name N>,   ...   , <Column Name M>``` &nbsp; To select multiple columns in a table (برای انتخاب چند ستون مورد نظر جدول).<br>
 
 ### 3. Update (بروزرسانی)
 
