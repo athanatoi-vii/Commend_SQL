@@ -12,8 +12,9 @@
 - Feature
 - Data Base
 - Table
-
 ### [3. Data Manipulation Language (دستورات مدیریت داده)](#Data-Manipulation-Language-دستورات-مدیریت-داده)
+- Value
+- Select
 ### [4. Functions And Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
 ### [5. Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
 
@@ -129,24 +130,26 @@ XY AS (X * Y)
 
 Create a database with a custom name (ایجاد یک دیتا بیس جدید با نام دلخواه)
 ```ruby
-CREATE DATABASE <My Name>
+CREATE DATABASE <Database Name 1>,   ...   ,<Database Name 10>
 ```
 
 Using a database created with a custom name (استفاده از دیتا بیس ساخته شده با نام دلخواه)
 ```ruby
-USE <My Name>
+USE <Database Name>
 ```
 <br>
 
 ### 5. Table (جدول)
+
+Create a table with a custom name (ایجاد یک جدول جدید با نام دلخواه)
 ```ruby
-CREATE TABLE <My Name>
+CREATE TABLE <Table Name>
 (
-    <My Name> <Data Tayp> <Limitation> <Feature>,
+    <Value Name> <Data Tayp> <Limitation 1> <Limitation 10>   ...   <Feature 1> <Feature 10>,
 
     ...
 
-    <My Name> <Data Tayp> <Limitation> <Feature>
+    <Value Name> <Data Tayp> <Limitation 1> <Limitation 10>   ...   <Feature 1> <Feature 10>
 );
 ```
 ---
@@ -154,16 +157,30 @@ CREATE TABLE <My Name>
 
 # Data Manipulation Language (دستورات مدیریت داده)
 
-### 1. Add Value In Table
+### 1. Value
+
+Insert any number of values ​​into the table (درج هر تعداد مقدار در جدول).
 ```ruby
-INSERT INTO <My Name Table> (S, I, B, T)
+INSERT INTO <Table Name> (S, I,   ...   , B, DT)
     VALUES
-    ('S1', 0, False, 0000/00/00 00:00),
+    ('S1', 0,   ...   , False, 0000/00/00 00:00),
 
     ...
 
-    ('S10', 10, True, 1111/11/11 11:11);
+    ('S10', 10,   ...   , True, 1111/11/11 11:11);
 ```
+<br>
+
+### 2. Select
+
+Retrieves data from one or more tables (داده‌ها را از یک یا چند جدول بازیابی می‌کند).
+```ruby
+SELECT <Columns Name> FROM <Table Name 1>,   ...   , <Table Name 10>;
+```
+The value of <Columns Name> can be as follows:<br>
+```*```                                           To select all columns (برای انتخواب تمام ستون ها).
+
+```<Column Name 1>,   ...   , <Column Name 10>``` To select the desired columns (برای انتخواب ستون های مورد نظر).
 <br>
 
 ---
