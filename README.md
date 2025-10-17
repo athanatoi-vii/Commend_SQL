@@ -12,8 +12,10 @@
 - Feature
 - Data Base
 - Table
-### [3. Functions And Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
-### [4. Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
+
+### [3. Data Manipulation Language (دستورات مدیریت داده)](#Data-Manipulation-Language-دستورات-مدیریت-داده)
+### [4. Functions And Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
+### [5. Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
 
 ---
 <br>
@@ -152,6 +154,17 @@ CREATE TABLE <My Name>
 
 # Data Manipulation Language (دستورات مدیریت داده)
 
+### 1. Add Value In Table
+```ruby
+INSERT INTO <My Name Table> (S, I, B, T)
+    VALUES
+    ('S1', 0, False, 0000/00/00 00:00),
+
+    ...
+
+    ('S10', 10, True, 1111/11/11 11:11);
+```
+<br>
 
 ---
 <br>
