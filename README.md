@@ -178,7 +178,9 @@ SELECT <Table Name N>.<Columns Name>,   ...   , <Table Name M>.<Columns Name>
 FROM <Table Name N>,   ...   , <Table Name M>
 WHERE <Table Name N>.<Column Name Table N> = <Table Name M>.<Column Name Table M> AND   ...   AND <Table Name K>.<Column Name Table I> = <Table Name K>.<Column Name Table I>;
 ```
-The value of columns name can be as follows (مقدار نام ستون می‌تواند به صورت زیر باشد):
+* The number of columns and tables can be one or more (تعداد ستون و جدول ها یک یا بیشتر میتواند باشد).
+
+The number of columns, tables, and conditions can be one or more (تعداد ستون، جدول و شرط ها میتواند یک عدد یا بیشتر باشد).
 
 ```*``` &nbsp;&nbsp; To select all columns (برای انتخواب تمام ستون های جدول).
 
