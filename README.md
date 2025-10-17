@@ -1,6 +1,6 @@
 # List (لیست)
 
-### [1. Introduction](#Introduction-مقدمه)
+### [1. Introduction (مقدمه)](#Introduction-مقدمه)
 - Data Base
 - SQL
 - Types of Commands
