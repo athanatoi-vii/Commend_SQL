@@ -45,7 +45,7 @@ Processed and organized data that provides meaning and context (داده‌ها�
 
 # Data Definition Language (زبان تعریف داده)
 
-### 1. Data Type
+### 1. Data Type (نوع داده ای)
 
 ```BYTE```           Bit data with a range of 1 to 255 (داده بیتی با رنج 1 تا 255).
 
