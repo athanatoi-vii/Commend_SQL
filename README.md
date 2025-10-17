@@ -1,18 +1,18 @@
 # List (لیست)
-### 1. [Introduction](#Introduction-مقدمه)
+### [1. Introduction](#Introduction-مقدمه)
 - Data Base
 - SQL
 - Types of Commands
 - Data
 - Information
-### 2. [Data Definition Language (دستورات تعریف داده)](#Data-Definition-Language-زبان-تعریف-داده)
+### [2. Data Definition Language (دستورات تعریف داده)](#Data-Definition-Language-زبان-تعریف-داده)
 - Data Type 
 - Limitation
 - Feature
 - Data Base
 - Table
-### 3. [Functions And Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
-### 4. [Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
+### [3. Functions And Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
+### [4. Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
 ---
 <br>
 
