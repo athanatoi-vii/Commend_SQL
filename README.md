@@ -1,4 +1,5 @@
 # List (لیست)
+
 ### [1. Introduction](#Introduction-مقدمه)
 - Data Base
 - SQL
@@ -13,26 +14,29 @@
 - Table
 ### [3. Functions And Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
 ### [4. Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
+
 ---
 <br>
 
 # Introduction (مقدمه)
-**1. Data Base (دیتا بیس):**<br>
+
+### 1. Data Base (دیتا بیس):
 It is a structured collection of data used to store and manage information (مجموعه‌ای ساختارمند از داده‌هاست که برای ذخیره و مدیریت اطلاعات استفاده می‌شود).
-  
-**2. SQL (زبان پرس‌ و جوی ساختار یافته):**<br>
+
+### 2. SQL (زبان پرس‌ و جوی ساختار یافته):
 It is a standard language for creating, reading, and editing data in relational databases (زبان استانداردی برای ایجاد، خواندن، و ویرایش داده‌ها در پایگاه‌داده‌های رابطه‌ای است).
 
-**3. Types Of Commands (انواع نوع دستورات)**<br>
+### 3. Types Of Commands (انواع نوع دستورات)
 - DDL: Used to create, modify, or delete database structure (برای ایجاد، تغییر یا حذف ساختار پایگاه‌داده استفاده می‌شود).
 - DML: It is used to manage data within tables (برای مدیریت داده‌های داخل جداول استفاده می‌شود).
 - DCL: It is used to manage user access to data (برای مدیریت دسترسی کاربران به داده‌ها به کار می‌رود).
 
-**4. Data (داده):**<br>
+### 4. Data (داده):
 Raw and unprocessed facts such as numbers, text, or dates (واقعیت‌های خام و پردازش‌نشده مانند عدد، متن یا تاریخ).
 
-**5. Information (اطلاعات):**<br>
+### 5. Information (اطلاعات):
 Processed and organized data that provides meaning and context (داده‌های پردازش‌شده و سازمان‌یافته‌ای که معنا و مفهوم ایجاد می‌کنند).
+
 ---
 <br>
 
@@ -137,8 +141,6 @@ CREATE TABLE <My Name>
     <My Name> <Data Tayp> <Limitation> <Feature>
 );
 ```
-<br>
-
 ---
 <br>
 
@@ -158,4 +160,3 @@ CREATE TABLE <My Name>
 
 
 ---
-
