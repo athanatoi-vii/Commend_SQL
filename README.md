@@ -65,10 +65,16 @@ Processed and organized data that provides meaning and context (داده‌ها�
 ### 2. Limitation
 
 
+```ruby
+PRIMARY KEY
+```
 
 ### 3. Feature
 
 
+```ruby
+IDENTITY(1,1)
+```
 
 ### 4. Data Base (پایگاه داده)
 
