@@ -40,29 +40,27 @@ Processed and organized data that provides meaning and context (داده‌ها�
 
 ### 1. Data Tayp
 
-* ```BYTE``` 
+* ```BYTE```           Bit data with a range of 1 to 255 (داده بیتی با رنج 1 تا 255).
 
-* ```INT``` 
+* ```INT```            Integer data (داده عددی صحیح).
 
-* ```FLOAT``` 
+* ```FLOAT```          Decimal numeric data (داده عددی اعشاری).
 
-* ```VARCHAR(N)``` 
+* ```VARCHAR(N)```     Rendering characters with a variable number (ارایه کارکتر با تعداد متغیر).
 
-* ```NVARCHAR(N)``` 
+* ```NVARCHAR(N)```    Representing a variable number of Unicode characters (ارایه کارکتر یونی کد با تعداد متغیر).
 
-* ```TEXT``` 
+* ```TEXT```           String data (داده رشته ای).
 
-* ```DATE``` 
+* ```DATE```           Date data (داده تاریخ).
 
-* ```TIME``` 
+* ```TIME```           Time data (داده زمان).
 
-* ```DATETIME``` 
+* ```DATETIME```       Date and time data (داده تاریخ و زمان).
 
-* ```BIT``` 
+* ```BIT / BOOLEAN```  Boolean data (داده بولین).
 
-* ```BOOLEAN``` 
-
-* ```IMAGE``` 
+* ```IMAGE```          Image data (داده تصویر).
 
 ### 2. Limitation
 
