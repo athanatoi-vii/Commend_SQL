@@ -49,27 +49,27 @@ Processed and organized data that provides meaning and context (داده‌ها�
 
 ### 1. Data Type (نوع داده ای)
 
-```BYTE``` &nbsp;&nbsp; Bit data with a range of 1 to 255 (داده بیتی با رنج 1 تا 255).
+```BYTE``` &nbsp; Bit data with a range of 1 to 255 (داده بیتی با رنج 1 تا 255).
 
-```INT``` &nbsp;&nbsp; Integer data (داده عددی صحیح).
+```INT``` &nbsp; Integer data (داده عددی صحیح).
 
-```FLOAT``` &nbsp;&nbsp; Decimal numeric data (داده عددی اعشاری).
+```FLOAT``` &nbsp; Decimal numeric data (داده عددی اعشاری).
 
-```VARCHAR(N)``` &nbsp;&nbsp; Rendering characters with a variable number (ارایه کارکتر با تعداد متغیر).
+```VARCHAR(N)``` &nbsp; Rendering characters with a variable number (ارایه کارکتر با تعداد متغیر).
 
-```NVARCHAR(N)``` &nbsp;&nbsp; Representing a variable number of Unicode characters (ارایه کارکتر یونی کد با تعداد متغیر).
+```NVARCHAR(N)``` &nbsp; Representing a variable number of Unicode characters (ارایه کارکتر یونی کد با تعداد متغیر).
 
-```TEXT``` &nbsp;&nbsp; String data (داده رشته ای).
+```TEXT``` &nbsp; String data (داده رشته ای).
 
-```DATE``` &nbsp;&nbsp; Date data (داده تاریخ).
+```DATE``` &nbsp; Date data (داده تاریخ).
 
-```TIME``` &nbsp;&nbsp; Time data (داده زمان).
+```TIME``` &nbsp; Time data (داده زمان).
 
-```DATETIME``` &nbsp;&nbsp; Date and time data (داده تاریخ و زمان).
+```DATETIME``` &nbsp; Date and time data (داده تاریخ و زمان).
 
-```BIT / BOOLEAN``` &nbsp;&nbsp; Boolean data (داده بولین).
+```BIT / BOOLEAN``` &nbsp; Boolean data (داده بولین).
 
-```IMAGE``` &nbsp;&nbsp; Image data (داده تصویر).
+```IMAGE``` &nbsp; Image data (داده تصویر).
 
 ### 2. Limitation (محدودیت)
 
@@ -167,22 +167,34 @@ INSERT INTO <Table Name> (S, I,   ...   , B, DT)
 
 ### 2. Select (انتخواب)
 
-Retrieves data from one or more tables (داده‌ها را از یک یا چند جدول بازیابی می‌کند).
-* The number of columns and tables can be one or more (تعداد ستون و جدول ها یک یا بیشتر میتواند باشد).
+Retrieves columns from tables (ستون ها را از جدول ها بازیابی می‌کند).
+* The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
+* If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخواب نیست).
 ```ruby
-SELECT <Columns Name>
+SELECT <Table Name N>.<Columns Name N>,   ...   , <Table Name M>.<Columns Name M>
 FROM <Table Name N>,   ...   , <Table Name M>
 ```
-Retrieves columns from one or more tables with the desired condition (ستون ها را از یک یا چند جدول با شرط مورد نظر بازیابی می‌کند).
-* The number of columns and tables can be one or more (تعداد ستون و جدول ها یک یا بیشتر میتواند باشد).
+Retrieves columns from tables with specified conditions (ستون ها را از جدول ها با شرط ها های گفته شده بازیابی می‌کند).
+* The number of columns, tables, and conditions can be one or more (تعداد ستون ها، جدول ها و شرط ها میتواند یک یا بیشتر باشد).
+* If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخواب نیست).
 ```ruby
 SELECT <Table Name N>.<Columns Name>,   ...   , <Table Name M>.<Columns Name>
 FROM <Table Name N>,   ...   , <Table Name M>
-WHERE <Table Name N>.<Column Name Table N> = <Table Name M>.<Column Name Table M> AND   ...   AND <Table Name K>.<Column Name Table I> = <Table Name K>.<Column Name Table I>;
+WHERE <Table Name N>.<Column Name N> = <Table Name M>.<Column Name M> AND   ...   AND <Table Name K>.<Column Name K> = <Table Name I>.<Column Name I>;
 ```
-```*``` &nbsp;&nbsp; To select all columns (برای انتخواب تمام ستون های جدول).
+Selected columns can be used or displayed with the new selected name (ستون های انتخواب شده با نام جدید انتخواب شده می تواند مورد استفاده یا نمایش قرار بگیرد).
+* The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
+* If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخواب نیست).
+* You can use the same condition as above (میتوان از شرط هم مانند بالا استفاده کرد).
+```ruby
+SELECT <Table Name N>.<Columns Name>,   ...   , <Table Name M>.<Columns Name>
+FROM <Table Name N> AS <New Name>,   ...   , <Table Name M> AS <New Name>
+```
+<br>
 
-```<Column Name N>,   ...   , <Column Name M>``` &nbsp;&nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر جدول).
+❗You can also use the following two options instead of all table names (میتوان به جای تمام نام جدول ها از دو حالت زیر هم استفاده کرد):<br>
+```*``` &nbsp; To select all columns (برای انتخواب تمام ستون های جدول).<br>
+```<Column Name N>,   ...   , <Column Name M>``` &nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر جدول).<br><br>
 
 ### 3. Update (بروزرسانی)
 
