@@ -93,7 +93,9 @@ USE <My Name>
 CREATE TABLE <My Name>
 (
     <My Name> <Data Tayp> <Limitation> <Feature>,
+
     ...
+
     <My Name> <Data Tayp> <Limitation> <Feature>
 );
 ```
