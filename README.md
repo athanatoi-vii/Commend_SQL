@@ -169,26 +169,36 @@ INSERT INTO <Table Name> (S, I,   ...   , B, DT)
 
 Retrieves data from one or more tables (داده‌ها را از یک یا چند جدول بازیابی می‌کند).
 ```ruby
-SELECT <Columns Name> FROM <Table Name 1>,   ...   , <Table Name 10>;
+SELECT <Columns Name>
+FROM <Table Name 1>,   ...   , <Table Name 10>
+```
+Retrieves columns from one or more tables with the desired condition (ستون ها را از یک یا چند جدول با شرط مورد نظر بازیابی می‌کند).
+```ruby
+SELECT <Table Name 1>.<Columns Name>,   ...   , <Table Name 10>.<Columns Name>
+FROM <Table Name 1>,   ...   , <Table Name 10>
+WHERE <Table Name 1>.<Column Name Table 1> = <Table Name 2>.<Column Name Table 2> AND   ...   AND <Table Name 9>.<Column Name Table 9> = <Table Name 10>.<Column Name Table 10>;
 ```
 The value of columns name can be as follows (مقدار نام ستون می‌تواند به صورت زیر باشد):
 
-```*``` &nbsp;&nbsp; To select all columns (برای انتخواب تمام ستون ها).
+```*``` &nbsp;&nbsp; To select all columns (برای انتخواب تمام ستون های جدول).
 
-```<Column Name 1>,   ...   , <Column Name 10>``` &nbsp;&nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر).
+```<Column Name 1>,   ...   , <Column Name 10>``` &nbsp;&nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر جدول).
 
 ### 3. Update (بروزرسانی)
 
 Changes the data in the table (داده های موجود در جدول را تغییر می دهد).
 ```ruby
-UPDATE <Table Name> SET <Column Name> = X WHERE <Column Name Previous> = Y;
+UPDATE <Table Name>
+SET <Column Name> = X
+WHERE <Column Name Previous> = Y;
 ```
 
 ### 4. Delete (حذف)
 
 Deletes records from the table (رکوردهایی را از جدول حذف می‌کند).
 ```ruby
-DELETE FROM <Table Name> WHERE <Column Name> = X;
+DELETE FROM <Table Name>
+WHERE <Column Name> = X;
 ```
 
 ---
