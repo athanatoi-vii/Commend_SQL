@@ -47,28 +47,27 @@ Processed and organized data that provides meaning and context (داده‌ها�
 
 ### 1. Data Type (نوع داده ای)
 
-```BYTE```           Bit data with a range of 1 to 255 (داده بیتی با رنج 1 تا 255).
+```BYTE``` &nbsp;&nbsp; Bit data with a range of 1 to 255 (داده بیتی با رنج 1 تا 255).
 
-```INT```            Integer data (داده عددی صحیح).
+```INT``` &nbsp;&nbsp; Integer data (داده عددی صحیح).
 
-```FLOAT```          Decimal numeric data (داده عددی اعشاری).
+```FLOAT``` &nbsp;&nbsp; Decimal numeric data (داده عددی اعشاری).
 
-```VARCHAR(N)```     Rendering characters with a variable number (ارایه کارکتر با تعداد متغیر).
+```VARCHAR(N)``` &nbsp;&nbsp; Rendering characters with a variable number (ارایه کارکتر با تعداد متغیر).
 
-```NVARCHAR(N)```    Representing a variable number of Unicode characters (ارایه کارکتر یونی کد با تعداد متغیر).
+```NVARCHAR(N)``` &nbsp;&nbsp; Representing a variable number of Unicode characters (ارایه کارکتر یونی کد با تعداد متغیر).
 
-```TEXT```           String data (داده رشته ای).
+```TEXT``` &nbsp;&nbsp; String data (داده رشته ای).
 
-```DATE```           Date data (داده تاریخ).
+```DATE``` &nbsp;&nbsp; Date data (داده تاریخ).
 
-```TIME```           Time data (داده زمان).
+```TIME``` &nbsp;&nbsp; Time data (داده زمان).
 
-```DATETIME```       Date and time data (داده تاریخ و زمان).
+```DATETIME``` &nbsp;&nbsp; Date and time data (داده تاریخ و زمان).
 
-```BIT / BOOLEAN```  Boolean data (داده بولین).
+```BIT / BOOLEAN``` &nbsp;&nbsp; Boolean data (داده بولین).
 
-```IMAGE```          Image data (داده تصویر).
-<br>
+```IMAGE``` &nbsp;&nbsp; Image data (داده تصویر).
 
 ### 2. Limitation (محدودیت)
 
@@ -97,7 +96,6 @@ CHECK (X == Y)
 ```(X <= Y)```
 
 ```(X != Y)```
-<br>
 
 ### 3. Feature (ویژگی)
 
@@ -124,7 +122,6 @@ XY AS (X * Y)
 ```(X / Y)```
 
 ```(X % Y)```
-<br>
 
 ### 4. Data Base (پایگاه داده)
 
@@ -137,7 +134,6 @@ Using a database created with a custom name (استفاده از دیتا بیس
 ```ruby
 USE <Database Name>
 ```
-<br>
 
 ### 5. Table (جدول)
 
@@ -169,7 +165,6 @@ INSERT INTO <Table Name> (S, I,   ...   , B, DT)
 
     ('S10', 10,   ...   , True, 1111/11/11 11:11);
 ```
-<br>
 
 ### 2. Select
 
@@ -177,11 +172,11 @@ Retrieves data from one or more tables (داده‌ها را از یک یا چن
 ```ruby
 SELECT <Columns Name> FROM <Table Name 1>,   ...   , <Table Name 10>;
 ```
-The value of <Columns Name> can be as follows:<br>
-```*```                                           To select all columns (برای انتخواب تمام ستون ها).
+The value of columns name can be as follows (مقدار نام ستون می‌تواند به صورت زیر باشد):
 
-```<Column Name 1>,   ...   , <Column Name 10>``` To select the desired columns (برای انتخواب ستون های مورد نظر).
-<br>
+```*``` &nbsp;&nbsp; To select all columns (برای انتخواب تمام ستون ها).
+
+```<Column Name 1>,   ...   , <Column Name 10>``` &nbsp;&nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر).
 
 ---
 <br>
