@@ -112,21 +112,21 @@ DEFAULT <Value>
 
 Assuming that columns X and Y have already been created in the table, to create a column with automatic calculation from the two columns X and Y, a new column can be created as follows (با فرض ساخته شدن ستون دلخواه از قبل در جدول، برای ساخت ستون با محاسبه خودکار از دو ستون دلخواه میتوان به حالت زیر یک ستون جدید ساخت).
 ```ruby
-<Column Name> AS (<Column Name Previous> * <Column Name Previous>)
+<Column Name> AS (<Column Name N> * <Column Name M>)
 ```
-```(<Column Name Previous> + <Column Name Previous>)```
+```(<Column Name N> + <Column Name M>)```
 
-```(<Column Name Previous> - <Column Name Previous>)```
+```(<Column Name N> - <Column Name M>)```
 
-```(<Column Name Previous> / <Column Name Previous>)```
+```(<Column Name N> / <Column Name M>)```
 
-```(<Column Name Previous> % <Column Name Previous>)```
+```(<Column Name M> % <Column Name M>)```
 
 ### 4. Data Base (پایگاه داده)
 
 Create a database with a custom name (ایجاد یک دیتا بیس جدید با نام دلخواه)
 ```ruby
-CREATE DATABASE <Database Name 1>,   ...   ,<Database Name 10>
+CREATE DATABASE <Database Name N>,   ...   ,<Database Name M>
 ```
 
 Using a database created with a custom name (استفاده از دیتا بیس ساخته شده با نام دلخواه)
@@ -140,11 +140,11 @@ Create a table with a custom name (ایجاد یک جدول جدید با نام
 ```ruby
 CREATE TABLE <Table Name>
 (
-    <Value Name> <Data Tayp> <Limitation 1> <Limitation 10>   ...   <Feature 1> <Feature 10>,
+    <Value Name> <Data Tayp> <Limitation N> <Limitation M>   ...   <Feature N> <Feature M>,
 
     ...
 
-    <Value Name> <Data Tayp> <Limitation 1> <Limitation 10>   ...   <Feature 1> <Feature 10>
+    <Value Name> <Data Tayp> <Limitation N> <Limitation M>   ...   <Feature N> <Feature M>
 );
 ```
 ---
@@ -158,11 +158,11 @@ Insert any number of values ​​into the table (درج هر تعداد مقد�
 ```ruby
 INSERT INTO <Table Name> (S, I,   ...   , B, DT)
     VALUES
-    ('S1', 0,   ...   , False, 0000/00/00 00:00),
+    ('SN', 1,   ...   , False, 0000/00/00 00:00),
 
     ...
 
-    ('S10', 10,   ...   , True, 1111/11/11 11:11);
+    ('SM', 10,   ...   , True, 1111/11/11 11:11);
 ```
 
 ### 2. Select (انتخواب)
@@ -170,35 +170,35 @@ INSERT INTO <Table Name> (S, I,   ...   , B, DT)
 Retrieves data from one or more tables (داده‌ها را از یک یا چند جدول بازیابی می‌کند).
 ```ruby
 SELECT <Columns Name>
-FROM <Table Name 1>,   ...   , <Table Name 10>
+FROM <Table Name N>,   ...   , <Table Name M>
 ```
 Retrieves columns from one or more tables with the desired condition (ستون ها را از یک یا چند جدول با شرط مورد نظر بازیابی می‌کند).
 ```ruby
-SELECT <Table Name 1>.<Columns Name>,   ...   , <Table Name 10>.<Columns Name>
-FROM <Table Name 1>,   ...   , <Table Name 10>
-WHERE <Table Name 1>.<Column Name Table 1> = <Table Name 2>.<Column Name Table 2> AND   ...   AND <Table Name 9>.<Column Name Table 9> = <Table Name 10>.<Column Name Table 10>;
+SELECT <Table Name N>.<Columns Name>,   ...   , <Table Name M>.<Columns Name>
+FROM <Table Name N>,   ...   , <Table Name M>
+WHERE <Table Name N>.<Column Name Table N> = <Table Name M>.<Column Name Table M> AND   ...   AND <Table Name K>.<Column Name Table I> = <Table Name K>.<Column Name Table I>;
 ```
 The value of columns name can be as follows (مقدار نام ستون می‌تواند به صورت زیر باشد):
 
 ```*``` &nbsp;&nbsp; To select all columns (برای انتخواب تمام ستون های جدول).
 
-```<Column Name 1>,   ...   , <Column Name 10>``` &nbsp;&nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر جدول).
+```<Column Name N>,   ...   , <Column Name M>``` &nbsp;&nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر جدول).
 
 ### 3. Update (بروزرسانی)
 
 Changes the data in the table (داده های موجود در جدول را تغییر می دهد).
 ```ruby
-UPDATE <Table Name>
-SET <Column Name> = X
-WHERE <Column Name Previous> = Y;
+UPDATE <Table Name N>,   ...   , <Table Name M>
+SET <Column Name N> = X,   ...   , <Column Name M> = Y
+WHERE <Column Name N> = X AND   ...   AND <Column Name M> = Y;
 ```
 
 ### 4. Delete (حذف)
 
 Deletes records from the table (رکوردهایی را از جدول حذف می‌کند).
 ```ruby
-DELETE FROM <Table Name>
-WHERE <Column Name> = X;
+DELETE FROM <Table Name N>,   ...   , <Table Name M>
+WHERE <Column Name> = X AND   ...   AND <Column Name> = Y;
 ```
 
 ---
