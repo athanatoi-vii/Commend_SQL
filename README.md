@@ -61,6 +61,7 @@ Processed and organized data that provides meaning and context (داده‌ها�
 * ```BIT / BOOLEAN```  Boolean data (داده بولین).
 
 * ```IMAGE```          Image data (داده تصویر).
+<br>
 
 ### 2. Limitation
 
@@ -87,6 +88,7 @@ CHECK (X == Y)
 * ```(X >= Y)```
 * ```(X <= Y)```
 * ```(X != Y)```
+* <br>
 
 ### 3. Feature
 
@@ -109,6 +111,7 @@ XY AS (X * Y)
 * ```(X - Y)```
 * ```(X / Y)```
 * ```(X % Y)```
+* <br>
 
 ### 4. Data Base (پایگاه داده)
 
@@ -121,6 +124,7 @@ Using a database created with a custom name (استفاده از دیتا بیس
 ```ruby
 USE <My Name>
 ```
+<br>
 
 ### 5. Table (جدول)
 ```ruby
@@ -133,6 +137,8 @@ CREATE TABLE <My Name>
     <My Name> <Data Tayp> <Limitation> <Feature>
 );
 ```
+<br>
+
 ---
 <br>
 
