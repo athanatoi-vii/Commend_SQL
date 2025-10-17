@@ -44,27 +44,27 @@ Processed and organized data that provides meaning and context (داده‌ها�
 
 ### 1. Data Type
 
-* ```BYTE```           Bit data with a range of 1 to 255 (داده بیتی با رنج 1 تا 255).
+```BYTE```           Bit data with a range of 1 to 255 (داده بیتی با رنج 1 تا 255).
 
-* ```INT```            Integer data (داده عددی صحیح).
+```INT```            Integer data (داده عددی صحیح).
 
-* ```FLOAT```          Decimal numeric data (داده عددی اعشاری).
+```FLOAT```          Decimal numeric data (داده عددی اعشاری).
 
-* ```VARCHAR(N)```     Rendering characters with a variable number (ارایه کارکتر با تعداد متغیر).
+```VARCHAR(N)```     Rendering characters with a variable number (ارایه کارکتر با تعداد متغیر).
 
-* ```NVARCHAR(N)```    Representing a variable number of Unicode characters (ارایه کارکتر یونی کد با تعداد متغیر).
+```NVARCHAR(N)```    Representing a variable number of Unicode characters (ارایه کارکتر یونی کد با تعداد متغیر).
 
-* ```TEXT```           String data (داده رشته ای).
+```TEXT```           String data (داده رشته ای).
 
-* ```DATE```           Date data (داده تاریخ).
+```DATE```           Date data (داده تاریخ).
 
-* ```TIME```           Time data (داده زمان).
+```TIME```           Time data (داده زمان).
 
-* ```DATETIME```       Date and time data (داده تاریخ و زمان).
+```DATETIME```       Date and time data (داده تاریخ و زمان).
 
-* ```BIT / BOOLEAN```  Boolean data (داده بولین).
+```BIT / BOOLEAN```  Boolean data (داده بولین).
 
-* ```IMAGE```          Image data (داده تصویر).
+```IMAGE```          Image data (داده تصویر).
 <br>
 
 ### 2. Limitation
@@ -89,9 +89,11 @@ Ensures that column values ​​match a specified condition (اطمینان م�
 ```ruby
 CHECK (X == Y)
 ```
-* ```(X >= Y)```
-* ```(X <= Y)```
-* ```(X != Y)```
+```(X >= Y)```
+
+```(X <= Y)```
+
+```(X != Y)```
 <br>
 
 ### 3. Feature
@@ -104,17 +106,21 @@ If no value is entered, assigns a default value to the column (در صورت و�
 ```ruby
 DEFAULT 'X'
 ```
-* ```DEFAULT 0```
-* ```DEFAULT False```
+```DEFAULT 0```
+
+```DEFAULT False```
 
 Assuming that columns X and Y have already been created in the table, to create a column with automatic calculation from the two columns X and Y, a new column can be created as follows (با فرض ساخته شدن ستون دلخواه از قبل در جدول، برای ساخت ستون با محاسبه خودکار از دو ستون دلخواه میتوان به حالت زیر یک ستون جدید ساخت).
 ```ruby
 XY AS (X * Y)
 ```
-* ```(X + Y)```
-* ```(X - Y)```
-* ```(X / Y)```
-* ```(X % Y)```
+```(X + Y)```
+
+```(X - Y)```
+
+```(X / Y)```
+
+```(X % Y)```
 <br>
 
 ### 4. Data Base (پایگاه داده)
