@@ -88,6 +88,12 @@ CHECK (X == Y)
 * ```(X <= Y)```
 * ```(X != Y)```
 
+### 3. Feature
+
+A property for numeric columns that automatically starts the value at number X and increases it by Y units each time (یک ویژگی برای ستون‌ های عددی است که مقدار را به‌ صورت خودکار از عدد اول شروع کرده و هر بار به اندازه عدد دوم افزایش می‌دهد).
+```ruby
+IDENTITY(X,Y)
+```
 If no value is entered, assigns a default value to the column (در صورت وارد نشدن مقدار، یک مقدار پیش‌فرض به ستون اختصاص می‌دهد).
 ```ruby
 DEFAULT 'X'
@@ -95,30 +101,20 @@ DEFAULT 'X'
 * ```DEFAULT 0```
 * ```DEFAULT False```
 
-### 3. Feature
-
-A property for numeric columns that automatically starts the value at number X and increases it by Y units each time (یک ویژگی برای ستون‌ های عددی است که مقدار را به‌ صورت خودکار از عدد اول شروع کرده و هر بار به اندازه عدد دوم افزایش می‌دهد).
+Assuming that columns X and Y have already been created in the table, to create a column with automatic calculation from the two columns X and Y, a new column can be created as follows (با فرض ساخته شدن ستون دلخواه از قبل در جدول، برای ساخت ستون با محاسبه خودکار از دو ستون دلخواه میتوان به حالت زیر یک ستون جدید ساخت).
 ```ruby
-IDENTITY(X,Y)
+XY AS (X * Y)
 ```
-
-```ruby
-
-```
-
-```ruby
-
-```
-
-```ruby
-
-```
+* ```(X + Y)```
+* ```(X - Y)```
+* ```(X / Y)```
+* ```(X % Y)```
 
 ### 4. Data Base (پایگاه داده)
 
 Create a database with a custom name (ایجاد یک دیتا بیس جدید با نام دلخواه)
 ```ruby
-CREATE DATA BASE <My Name>
+CREATE DATABASE <My Name>
 ```
 
 Using a database created with a custom name (استفاده از دیتا بیس ساخته شده با نام دلخواه)
