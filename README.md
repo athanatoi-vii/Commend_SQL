@@ -165,26 +165,26 @@ INSERT INTO <Table Name> (S, I,   ...   , B, DT)
     ('SM', 10,   ...   , True, 1111/11/11 11:11);
 ```
 
-### 2. Select (انتخواب)
+### 2. Select (انتخاب)
 
 Retrieves columns from tables (ستون ها را از جدول ها بازیابی می‌کند).
 * The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
-* If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخواب نیست).
+* If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخاب نیست).
 ```ruby
 SELECT <Table Name N>.<Columns Name N>,   ...   , <Table Name M>.<Columns Name M>
 FROM <Table Name N>,   ...   , <Table Name M>
 ```
 Retrieves columns from tables with specified conditions (ستون ها را از جدول ها با شرط ها های گفته شده بازیابی می‌کند).
 * The number of columns, tables, and conditions can be one or more (تعداد ستون ها، جدول ها و شرط ها میتواند یک یا بیشتر باشد).
-* If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخواب نیست).
+* If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخاب نیست).
 ```ruby
 SELECT <Table Name N>.<Columns Name>,   ...   , <Table Name M>.<Columns Name>
 FROM <Table Name N>,   ...   , <Table Name M>
 WHERE <Table Name N>.<Column Name N> = <Table Name M>.<Column Name M> AND   ...   AND <Table Name K>.<Column Name K> = <Table Name I>.<Column Name I>;
 ```
-Selected columns can be used or displayed with the new selected name (ستون های انتخواب شده با نام جدید انتخواب شده می تواند مورد استفاده یا نمایش قرار بگیرد).
+Selected columns can be used or displayed with the new selected name (ستون های انتخاب شده با نام جدید انتخاب شده می تواند مورد استفاده یا نمایش قرار بگیرد).
 * The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
-* If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخواب نیست).
+* If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخاب نیست).
 * You can use the same condition as above (میتوان از شرط هم مانند بالا استفاده کرد).
 ```ruby
 SELECT <Table Name N>.<Columns Name>,   ...   , <Table Name M>.<Columns Name>
@@ -192,13 +192,15 @@ FROM <Table Name N> AS <New Name>,   ...   , <Table Name M> AS <New Name>
 ```
 <br>
 
-❗You can also use the following two options instead of all table names (میتوان به جای تمام نام جدول ها از دو حالت زیر هم استفاده کرد):<br>
-```*``` &nbsp; To select all columns (برای انتخواب تمام ستون های جدول).<br>
-```<Column Name N>,   ...   , <Column Name M>``` &nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر جدول).<br><br>
+❗The general point of the selection section (نکته کلی بخش انتخاب)<br>
+You can also use the following two options instead of all table names (میتوان به جای تمام نام جدول ها از دو حالت زیر هم استفاده کرد):<br>
+```*``` &nbsp; To select all columns (برای انتخاب تمام ستون های جدول).<br>
+```<Column Name N>,   ...   , <Column Name M>``` &nbsp; To select multiple columns in a table (برای انتخاب چند ستون مورد نظر جدول).<br><br>
 
 ### 3. Update (بروزرسانی)
 
 Changes the data in the table (داده های موجود در جدول را تغییر می دهد).
+* The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
 ```ruby
 UPDATE <Table Name N>,   ...   , <Table Name M>
 SET <Column Name N> = X,   ...   , <Column Name M> = Y
@@ -208,6 +210,7 @@ WHERE <Column Name N> = X AND   ...   AND <Column Name M> = Y;
 ### 4. Delete (حذف)
 
 Deletes records from the table (رکوردهایی را از جدول حذف می‌کند).
+* The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
 ```ruby
 DELETE FROM <Table Name N>,   ...   , <Table Name M>
 WHERE <Column Name> = X AND   ...   AND <Column Name> = Y;
