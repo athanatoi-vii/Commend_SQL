@@ -1,26 +1,29 @@
 # List (لیست)
 1. [Introduction](#Introduction-مقدمه)
-   - Database
+   - Data Base
    - SQL
-   - Types of commands
+   - Types of Commands
    - Data
    - Information
 2. [Data Definition Language (دستورات تعریف داده)](#Data-Definition-Language-زبان-تعریف-داده)
+   - Data Type 
+   - Limitation
+   - Feature
    - Data Base
-   - Create Taable
-3. [Functions and Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
+   - Table
+3. [Functions And Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
 4. [Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
 ---
 <br>
 
 # Introduction (مقدمه)
-* **Database (دیتابیس):**<br>
+* **Data Base (دیتا بیس):**<br>
 It is a structured collection of data used to store and manage information (مجموعه‌ای ساختارمند از داده‌هاست که برای ذخیره و مدیریت اطلاعات استفاده می‌شود).
   
 * **SQL (زبان پرس‌ و جوی ساختار یافته):**<br>
 It is a standard language for creating, reading, and editing data in relational databases (زبان استانداردی برای ایجاد، خواندن، و ویرایش داده‌ها در پایگاه‌داده‌های رابطه‌ای است).
 
-* **Types of commands (انواع نوع دستورات)**<br>
+* **Types Of Commands (انواع نوع دستورات)**<br>
   - DDL: Used to create, modify, or delete database structure (برای ایجاد، تغییر یا حذف ساختار پایگاه‌داده استفاده می‌شود).
   - DML: It is used to manage data within tables (برای مدیریت داده‌های داخل جداول استفاده می‌شود).
   - DCL: It is used to manage user access to data (برای مدیریت دسترسی کاربران به داده‌ها به کار می‌رود).
@@ -35,7 +38,19 @@ Processed and organized data that provides meaning and context (داده‌ها�
 
 # Data Definition Language (زبان تعریف داده)
 
-### 1. Data Base (پایگاه داده)
+### 1. Data Tayp
+
+
+
+### 2. Limitation
+
+
+
+### 3. Feature
+
+
+
+### 4. Data Base (پایگاه داده)
 
 Create a database with a custom name (ایجاد یک دیتا بیس جدید با نام دلخواه)
 ```ruby
@@ -47,8 +62,15 @@ Using a database created with a custom name (استفاده از دیتا بیس
 USE <My Name>
 ```
 
-### 2. Create Taable (ساخت جدول)
-
+### 5. Table (جدول)
+```ruby
+CREATE TABLE <My Name>
+(
+    <My Name> <Data Tayp> <Limitation> <Feature>,
+    ...
+    <My Name> <Data Tayp> <Limitation> <Feature>
+);
+```
 ---
 <br>
 
