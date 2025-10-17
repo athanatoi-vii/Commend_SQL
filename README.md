@@ -40,7 +40,29 @@ Processed and organized data that provides meaning and context (داده‌ها�
 
 ### 1. Data Tayp
 
+* ```BYTE``` 
 
+* ```INT``` 
+
+* ```FLOAT``` 
+
+* ```VARCHAR(N)``` 
+
+* ```NVARCHAR(N)``` 
+
+* ```TEXT``` 
+
+* ```DATE``` 
+
+* ```TIME``` 
+
+* ```DATETIME``` 
+
+* ```BIT``` 
+
+* ```BOOLEAN``` 
+
+* ```IMAGE``` 
 
 ### 2. Limitation
 
