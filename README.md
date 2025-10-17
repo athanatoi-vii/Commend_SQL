@@ -152,7 +152,7 @@ CREATE TABLE <Table Name>
 
 # Data Manipulation Language (دستورات مدیریت داده)
 
-### 1. Value
+### 1. Value (مقدار)
 
 Insert any number of values ​​into the table (درج هر تعداد مقدار در جدول).
 ```ruby
@@ -165,7 +165,7 @@ INSERT INTO <Table Name> (S, I,   ...   , B, DT)
     ('S10', 10,   ...   , True, 1111/11/11 11:11);
 ```
 
-### 2. Select
+### 2. Select (انتخواب)
 
 Retrieves data from one or more tables (داده‌ها را از یک یا چند جدول بازیابی می‌کند).
 ```ruby
@@ -177,14 +177,14 @@ The value of columns name can be as follows (مقدار نام ستون می‌�
 
 ```<Column Name 1>,   ...   , <Column Name 10>``` &nbsp;&nbsp; To select the desired columns (برای انتخواب ستون های مورد نظر).
 
-### 3. Update
+### 3. Update (بروزرسانی)
 
 Changes the data in the table (داده های موجود در جدول را تغییر می دهد).
 ```ruby
 UPDATE <Table Name> SET <Column Name> = X WHERE <Column Name Previous> = Y;
 ```
 
-### 4. Delete
+### 4. Delete (حذف)
 
 Deletes records from the table (رکوردهایی را از جدول حذف می‌کند).
 ```ruby
