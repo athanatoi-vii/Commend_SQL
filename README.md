@@ -175,7 +175,7 @@ Retrieves columns from tables (ستون ها را از جدول ها بازیا�
 * The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
 * If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخاب نیست).
 ```ruby
-SELECT <Table Name N>.<Columns Name N>,   ...   , <Table Name M>.<Columns Name M>
+SELECT <Table Name N>.<Columns Name X>,   ...   , <Table Name M>.<Columns Name Y>
 FROM <Table Name N>,   ...   , <Table Name M>
 ```
 Retrieves columns from tables with specified conditions (ستون ها را از جدول ها با شرط ها های گفته شده بازیابی می‌کند).
