@@ -186,7 +186,7 @@ SELECT <Table Name N>.<Columns Name>,   ...   , <Table Name M>.<Columns Name>
 FROM <Table Name N>,   ...   , <Table Name M>
 WHERE <Table Name N>.<Column Name N> = <Table Name M>.<Column Name M> AND   ...   AND <Table Name K>.<Column Name K> = <Table Name I>.<Column Name I>;
 ```
-Selected columns can be used or displayed with the new selected name (ستون های انتخاب شده با نام جدید انتخاب شده می تواند مورد استفاده یا نمایش قرار بگیرد).
+The selected columns are created and copied with the new selected name and can be used (ستون های انتخاب شده با نام جدید انتخاب شده ساخته و کپی شده و می تواند مورد استفاده بگیرد).
 * The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
 * If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخاب نیست).
 * You can use the same condition as above (میتوان از شرط هم مانند بالا استفاده کرد).
