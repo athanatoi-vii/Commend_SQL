@@ -19,6 +19,7 @@
 - Delete
 ### [4. Functions And Operators (توابع و عملگرها)](#Functions-and-Operators-توابع-و-عملگرها)
 ### [5. Joins (روابط بین جدول‌ها)](#Joins-روابط-بین-جدول‌ها)
+### [6. Online SQL compiler (کامپایلر آنلاین زبان پرس‌ و جوی ساختار یافته)](#Online-SQL-compiler-کامپایلر-آنلاین-زبان-پرس‌-و-جوی-ساختار-یافته)
 
 ---
 <br>
@@ -230,7 +231,7 @@ WHERE <Column Name> = X AND   ...   AND <Column Name> = Y;
 ---
 <br>
 
-# Joins (روابط بین جدول‌ها)
+# Online SQL compiler (کامپایلر آنلاین زبان پرس‌ و جوی ساختار یافته)
 
 ### [1. Online SQL compiler (کامپایلر آنلاین زبان پرس‌ و جوی ساختار یافته)](https://sqliteonline.com/)
 ---
