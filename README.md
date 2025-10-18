@@ -127,6 +127,7 @@ Assuming that columns X and Y have already been created in the table, to create 
 ### 4. Data Base (پایگاه داده)
 
 Create a database with a custom name (ایجاد یک دیتا بیس جدید با نام دلخواه)
+- The number of databases can be one or more (تعداد دیتابیس می تواند یک یا بیشتر باشد).
 ```ruby
 CREATE DATABASE <Database Name N>,   ...   ,<Database Name M>
 ```
@@ -139,14 +140,15 @@ USE <Database Name>
 ### 5. Table (جدول)
 
 Create a table with a custom name (ایجاد یک جدول جدید با نام دلخواه)
+- The number of constraints and features can be zero or more (تعداد محدودیت و ویژگی ها می تواند صفر یا بیشتر باشد).
 ```ruby
 CREATE TABLE <Table Name>
 (
-    <Value Name> <Data Tayp> <Limitation N> <Limitation M>   ...   <Feature N> <Feature M>,
+    <Value Name> <Data Tayp> <Limitation N> ... <Limitation M> <Feature N> ... <Feature M>,
 
     ...
 
-    <Value Name> <Data Tayp> <Limitation N> <Limitation M>   ...   <Feature N> <Feature M>
+    <Value Name> <Data Tayp> <Limitation N> ... <Limitation M> <Feature N> ... <Feature M>
 );
 ```
 ---
