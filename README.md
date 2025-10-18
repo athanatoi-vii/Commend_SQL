@@ -228,3 +228,9 @@ WHERE <Column Name> = X AND   ...   AND <Column Name> = Y;
 
 
 ---
+<br>
+
+# Joins (روابط بین جدول‌ها)
+
+### [1. Online SQL compiler (کامپایلر آنلاین زبان پرس‌ و جوی ساختار یافته)](https://sqliteonline.com/)
+---
