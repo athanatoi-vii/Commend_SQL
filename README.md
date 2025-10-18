@@ -179,7 +179,7 @@ SELECT <Table Name N>.<Columns Name X>,   ...   , <Table Name M>.<Columns Name Y
 FROM <Table Name N>,   ...   , <Table Name M>
 ```
 Retrieves columns from tables with specified conditions (ستون ها را از جدول ها با شرط ها های گفته شده بازیابی می‌کند).
-* The number of columns, tables, and conditions can be one or more (تعداد ستون ها، جدول ها و شرط ها میتواند یک یا بیشتر باشد).
+* The number of columns and tables can be one or more and the number of conditions can be zero or more (تعداد ستون ها و جدول ها یک یا بیشتر و تعداد شرط ها میتواند صفر یا بیشتر باشد).
 * If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخاب نیست).
 ```ruby
 SELECT <Table Name N>.<Columns Name>,   ...   , <Table Name M>.<Columns Name>
@@ -189,7 +189,7 @@ WHERE <Table Name N>.<Column Name N> = <Table Name M>.<Column Name M> AND   ... 
 The selected columns are created and copied with the new selected name and can be used (ستون های انتخاب شده با نام جدید انتخاب شده ساخته و کپی شده و می تواند مورد استفاده بگیرد).
 * The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
 * If you SELECT only one table, you do not need to enter the table name in the SELECTION section (در صورت انتخاب تنها یک جدول نیاز به نام جدول در بخش انتخاب نیست).
-* You can use the same condition as above (میتوان از شرط هم مانند بالا استفاده کرد).
+* You can use the same condition as above (میتوان از شرط هم شبیه بالا استفاده کرد).
 ```ruby
 SELECT <Table Name N>.<Columns Name>,   ...   , <Table Name M>.<Columns Name>
 FROM <Table Name N> AS <New Name>,   ...   , <Table Name M> AS <New Name>
@@ -203,7 +203,7 @@ FROM <Table Name N> AS <New Name>,   ...   , <Table Name M> AS <New Name>
 ### 3. Update (بروزرسانی)
 
 Changes the data in the table (داده های موجود در جدول را تغییر می دهد).
-* The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
+* The number of columns and tables can be one or more and the number of conditions can be zero or more (تعداد ستون ها و جدول ها یک یا بیشتر و تعداد شرط ها میتواند صفر یا بیشتر باشد).
 ```ruby
 UPDATE <Table Name N>,   ...   , <Table Name M>
 SET <Column Name N> = X,   ...   , <Column Name M> = Y
@@ -212,11 +212,16 @@ WHERE <Column Name N> = X AND   ...   AND <Column Name M> = Y;
 
 ### 4. Delete (حذف)
 
-Deletes records from the table (رکوردهایی را از جدول حذف می‌کند).
-* The number of columns and tables can be one or more (تعداد ستون ها و جدول ها میتواند یک یا بیشتر باشد).
+Deletes records from the table (با توجه به شرط جدول را حذف می‌کند).
+* The number of bets and tables can be one or more (تعداد شرط و جدول ها یک یا بیشتر میتواند باشد).
 ```ruby
 DELETE FROM <Table Name N>,   ...   , <Table Name M>
 WHERE <Column Name> = X AND   ...   AND <Column Name> = Y;
+```
+Deletes records from the table (به طور کامل جدول را حذف می‌کند).
+* The number of tables can be one or more (تعداد جدول ها یک یا بیشتر میتواند باشد).
+```ruby
+DROP TABLE IF EXISTS <Table Name N>,   ...   , <Table Name M>
 ```
 
 ---
