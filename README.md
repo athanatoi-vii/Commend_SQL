@@ -196,7 +196,7 @@ FROM <Table Name N> AS <New Name>,   ...   , <Table Name M> AS <New Name>
 ```
 <br>
 
-❗You can also use the following two options instead of all Table Names (میتوان به جای تمام نام جدول ها از دو حالت زیر هم استفاده کرد)<br>
+❗You can also use the following two options instead of all column names (میتوان به جای تمام نام ستون ها از دو حالت زیر هم استفاده کرد)<br>
 * ``` * ``` &nbsp; To select all columns (برای انتخاب تمام ستون های جدول).<br>
 * ```<Column Name N>,   ...   , <Column Name M>``` &nbsp; To select multiple columns from a table (برای انتخاب چند ستون مورد نظر از یک جدول).<br>
 
